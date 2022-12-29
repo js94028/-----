@@ -1,0 +1,299 @@
+<html>
+	<head>
+		<title>順發禮餅舖</title>
+	</head>
+	<style>
+	body {background-image:url( ' pic/背景.jpg ' );
+		background-size: cover;
+　      background-repeat:no-repeat}
+   
+    ul { /* 取消ul預設的內縮及樣式 */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.drop-down-menu {
+	    width:100%;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 15px;	
+        z-index: 5;  /*控制選單的顯示層級*/         
+        position: fixed;      
+        top: 0%; 	
+        margin-top: 0;
+		opacity: 0.94;
+        transition: opacity ; 
+        background-color:#666666;
+		
+	
+		
+    }
+
+    ul.drop-down-menu li {
+        position: relative;		
+        top:10%;
+		z-index:1;
+        white-space: nowrap;
+        border-left: #ccc 0px solid;
+		
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+		width:19.9%;
+    }
+
+     ul.drop-down-menu a {
+        background-img:pic/背景.jpg;
+        color: #ffff;
+        display: block;
+        padding: 0 105px;
+        text-decoration: none;
+        line-height: 40px;
+	    text-align:center;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+	ul.drop-down-menu ul { /*隱藏次選單*/
+        display: none;
+		
+    }
+
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        display: block;
+	
+    }
+	
+    
+	.title{
+	position:relative;
+	top:6%;
+	}
+	
+	
+	.pic1{
+	left:19%;
+	 top:47%;
+	position:absolute;
+	z-index:1;
+	border: 10px solid #ffff;
+	}
+	.pic2{
+	left:49%;
+	 top:70%;
+	position:absolute;
+	z-index:-1;
+	}
+	
+	.pic3{
+	left:7%;
+	 top:110%;
+	position:absolute;
+	z-index:-1;
+	}
+	.pic7{
+	left:35%;
+	 top:190%;
+	position:absolute;
+	z-index:1;
+	border: 5px solid #ffff;
+	}
+	.pic4{
+	left:40%;
+	 top:127%;
+	position:absolute;
+	z-index:1;
+	border: 5px dashed #ffff;
+	}
+	.pic5{
+	left:65%;
+	 top:193%;
+	position:absolute;
+	z-index:-1;
+	}
+	.pic7{
+	left:78%;
+	 top:173%;
+	position:absolute;
+	z-index:-1;
+	transform: rotate(355deg);
+	border: 5px dotted #ffff;
+	}
+	.pic6{
+	left:35%;
+	 top:190%;
+	position:absolute;
+	z-index:1;
+	border: 4px solid #ffff;
+	}
+	.pic8{
+	left:29%;
+	 top:255%;
+	position:absolute;
+	z-index:1;
+	}
+	.pic9{
+	left:2%;
+	 top:235%;
+	position:absolute;
+	z-index:-1;
+	border: 4px solid #ffff;
+	}
+	.pic10{
+	left:5%;
+	 top:170%;
+	position:absolute;
+	z-index:1;
+	transform: rotate(6deg);
+	}
+	
+	 .pic11{
+	left:9%;
+	 top:304%;
+	position:absolute;
+	z-index:1;
+	border: 4px solid #ffff;
+	
+	}
+	.pic12{
+	left:0%;
+	 top:350%;
+	position:absolute;
+	z-index:-1;
+	
+	}
+	.pic13{
+	left:34%;
+	 top:350%;
+	position:absolute;
+	z-index:-2;
+	
+	}
+	.pic14{
+	left:65%;
+	 top:350%;
+	position:absolute;
+	z-index:-3;
+	
+	}
+	
+	#myCanvas{
+	position:absolute;
+	top:400%;
+	width:100%;
+	height:310px;
+	opacity: 0.8;
+    transition: opacity ; 
+    background-color:#666666;
+	z-index:-1;
+	}
+	.table{
+	position:absolute;
+	top:402%;
+	width:820;
+	z-index:1;
+	}
+	.map{
+	position:absolute;
+	top:402%;
+	left:68%;
+	z-index:1;
+	}
+	
+    </style>
+	<body >
+		<div class="title">
+		<img src="pic/順發圖.jpg" width="100%">
+		<h1 align=center><font  color="	#888800"size="9"face="微軟正黑體">順發禮餅舖</font></h1>
+		</div>
+		
+		<ul class="drop-down-menu" >  
+        <li><a href="map.html">關於鹿草</a>
+		 <ul>
+		 <li><a href="map.html#1">介紹鹿草</a>
+		 </li>
+		 <li><a href="map.html#1">介紹「一袋一鹿」</a>
+		 </li>
+		  </ul>
+        </li>
+        <li><a href="map.html#2">關於我們</a>
+        </li>
+        <li><a href="#">景點介紹</a>
+		 <ul>
+                <li><a href="迷鹿餐廳2.html">迷鹿餐廳</a>
+                </li>
+                <li><a href="艾美筑2.html">艾美筑工坊</a>
+                </li>
+                <li><a href="公所2.html">鹿草鄉公所</a>
+                </li>
+                <li><a href="日和2.html">日和製冰部</a>
+                </li>
+                <li><a href="紅磚2.html">鹿東紅磚瓦下ㄟ埤頭故事</a>
+                </li>
+                <li><a href="順發2.html">順發禮餅舖</a>
+                </li>
+                <li><a href="涸魚2.html">鹿東涸魚季</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="一日遊行程.html">一日遊行程</a>
+        </li>
+        
+        <li><a href="mailto:js94028@gmail.com?subject=給我們的建議">聯絡我們</a>
+        </ul>
+		
+		
+		<img class="pic1" src="pic/順發1.jpg" width="32%">
+        <img class="pic2" src="pic/順發介紹1.jpg" width="35%" height="40%">
+		
+		<img class="pic3" src="pic/順發介紹2.jpg" width="35%" height="55%" >
+		<img class="pic4"src="pic/順發2.jpg" width="30%">
+		
+		<img class="pic5" src="pic/順發介紹3.jpg" width="35%" height="40%">
+		<img class="pic6" src="pic/順發5.jpg" width="30%">
+		<img class="pic7" src="pic/順發12.jpg" width="20%">
+		<img class="pic10"src="pic/順發裝飾1.jpg" width="23%">
+		
+		<img class="pic8" src="pic/順發介紹4.jpg" width="35%" height="40%">
+		<img class="pic9"src="pic/順發4.jpg" width="30%">
+		
+		<img class="pic11"src="pic/順發6.jpg" width="82%" height="45%">
+		<img class="pic12" src="pic/順發介紹5.jpg" width="35%" height="40%">
+		<img class="pic13" src="pic/順發介紹6.jpg" width="35%" height="40%">
+		<img class="pic14" src="pic/順發介紹7.jpg" width="35%" height="40%">
+		</div>
+		
+		<canvas id="myCanvas"></canvas>
+		
+		 <table class="table">
+                 <tr>
+				 <td>
+				 <h1 align="left"><span style="color:#ffff; font-size: 28px;">順發禮餅舖</span></h1>
+                </td>
+				</tr>
+                 <tr>
+				 <td>
+				 <p><strong><span style="color: #ffff; font-size: 20px;">電話：05-3752328 </span></strong></p>
+                 <p><strong><span style="color: #ffff;font-size: 20px;">地址：611嘉義縣鹿草鄉後堀村51號 </span></strong></p>
+				 <p><strong><span style="color: #ffff;font-size: 20px;"><a href="https://www.facebook.com/%E9%A0%86%E7%99%BC%E7%A6%AE%E9%A4%85%E8%88%96-230812210292674/" target="_blank" rel="noopener"  style="text-decoration:none;color:#6495ed;">● FB粉絲團（點我）</a></span></strong></p>
+			     </td>					 
+				<td>
+				<p><strong><span style="color:#ffff;font-size: 20px;"> 開放時間：</br> 星期一	07:30–21:30<br> 星期二	07:30–21:30<br> 星期三	07:30–21:30<br> 星期四	07:30–21:30<br> 星期五	07:30–21:30<br> 星期六	07:30–21:00<br> 星期日	07:30–15:30<br> </strong></p>
+			    </td>
+				 </tr>
+			</table>
+			<br>
+			<p class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.538591484138!2d120.34120671474511!3d23.40490368476079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9a9e26e0765d%3A0xa906d09e336a9363!2z6aCG55m856au6aSF6IiW!5e0!3m2!1szh-TW!2stw!4v1578147206545!5m2!1szh-TW!2stw" width="400" height="270" frameborder="1" style="border:1;" allowfullscreen=""></iframe>
+            </p>
+	</body>
+</html>

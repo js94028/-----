@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>一日遊行程</title>
+	</head>
+	<style>
+	body {background-image:url( ' pic/背景.jpg ' );
+		background-size: cover;
+　      background-repeat:no-repeat}
+   
+    ul { /* 取消ul預設的內縮及樣式 */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.drop-down-menu {
+	    width:100%;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 15px;	
+        z-index: 5;  /*控制選單的顯示層級*/         
+        position: fixed;      
+        top: 0%; 	
+        margin-top: 0;
+		opacity: 0.94;
+        transition: opacity ; 
+        background-color:#666666;
+		
+	
+		
+    }
+
+    ul.drop-down-menu li {
+        position: relative;		
+        top:10%;
+		z-index:1;
+        white-space: nowrap;
+        border-left: #ccc 0px solid;
+		
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+		width:19.9%;
+    }
+
+     ul.drop-down-menu a {
+        background-img:pic/背景.jpg;
+        color: #ffff;
+        display: block;
+        padding: 0 105px;
+        text-decoration: none;
+        line-height: 40px;
+	    text-align:center;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+	ul.drop-down-menu ul { /*隱藏次選單*/
+        display: none;
+		
+    }
+
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        display: block;
+	
+    }
+	
+	.title{
+	position:relative;
+	top:6%;
+	}
+	
+	.road{
+	position:absolute;
+	left:43%;
+	}
+	</style>
+	<body >
+		<div class="title">
+		<img src="pic/一日遊圖.jpg" width="100%">
+		<h1 align=center><font  color="	#EE7700"size="9"face="微軟正黑體">一日遊行程懶人包</font></h1>
+		</div>
+		
+		<ul class="drop-down-menu" >  
+        <li><a href="map.html">關於鹿草</a>
+		 <ul>
+		 <li><a href="map.html#1">介紹鹿草</a>
+		 </li>
+		 <li><a href="map.html#1">介紹「一袋一鹿」</a>
+		 </li>
+		  </ul>
+        </li>
+        <li><a href="map.html#2">關於我們</a>
+        </li>
+        <li><a href="#">景點介紹</a>
+		 <ul>
+                <li><a href="迷鹿餐廳2.html">迷鹿餐廳</a>
+                </li>
+                <li><a href="艾美筑2.html">艾美筑工坊</a>
+                </li>
+                <li><a href="公所2.html">鹿草鄉公所</a>
+                </li>
+                <li><a href="日和2.html">日和製冰部</a>
+                </li>
+                <li><a href="紅磚2.html">鹿東紅磚瓦下ㄟ埤頭故事</a>
+                </li>
+                <li><a href="順發2.html">順發禮餅舖</a>
+                </li>
+                <li><a href="涸魚2.html">鹿東涸魚季</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="一日遊行程.html">一日遊行程</a>
+        </li>
+  
+        <li><a href="mailto:js94028@gmail.com?subject=給我們的建議">聯絡我們</a>
+        </ul></br></br>
+		 <div align="center" >
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>初次到訪鹿草的你/妳，再看完一連串精采的景點介紹後，還是不知道該從何下手?不知道如何安排行程嗎?</b></font></p>     
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>別擔心!為初訪露草的旅客量身打造的一日遊懶人包報你知!!!</b><font></p></br>
+		  <p><font face="微軟正黑體" color="#333333" size="5"><b>交通工具:</b></font></p>
+		  <p><font face="微軟正黑體" color="#333333" size="4"><b>由嘉義市區通往鹿草可使用的大眾交通運輸工具僅有「公車」，鹿草可是沒有火車站的呦~~</b></font></p></br>
+          
+		 <img src="pic/一日遊1.jpg"  width="35%">
+		 <img src="pic/一日遊2.jpg"width="35%"></br>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>由於公車可抵達露草的路線僅有2條，且每一班需等上1-2小時，嗯嗯嗯……機動性相當低呢~移動各個景點也不方便。</b></font></p>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>建議欲前往鹿草觀光的旅客自行開車或騎機車，路線簡單不複雜，最慢30分鐘可以抵達，是不是相當方便呢!!</b></font></p>
+         <p><font face="微軟正黑體" color="#333333" size="4"><b>夏天騎車出去玩一定要記得做好防曬呀!!</b></font></p>
+         <img src="pic/一日遊3.jpg"width="50%"></br></br>
+		 </div>
+		  <div align="left" class="road">
+		 <p><font face="微軟正黑體" color="#333333" size="5"><b>建議路線:</b></font></p>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>09:00 嘉義火車站出發</b></font></p>
+         <p><font face="微軟正黑體" color="#333333" size="4"><b>9:30~:11:30艾美筑植物萃取工坊DIY</b></font></p>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>09:00 12:00~13:30迷鹿餐廳(午餐)</b></font></p>		 
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>13:50~14:35鹿草鄉公所</b></font></p>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>  14:40~15:00鹿東紅磚瓦下ㄟ埤頭故事</b></font></p>
+		 <p><font face="微軟正黑體" color="#333333" size="4"><b>  15:10~15:40日和製冰</b></font></p>	
+         <p><font face="微軟正黑體" color="#333333" size="4"><b>  16:00~18:00順發餅舖DIY</b></font></p>
+         <p><font face="微軟正黑體" color="#333333" size="4"><b>  18:00返回嘉義火車站</b></font></p>		 
+		 </div>
+		</body>
+</html>

@@ -1,0 +1,222 @@
+<html>
+	<head>
+		<title>鹿東紅磚瓦下ㄟ埤頭故事</title>
+	</head>
+	<style>
+	body {background-image:url( ' pic/背景.jpg ' );
+		background-size: cover;
+　      background-repeat:no-repeat}
+   
+    ul { /* 取消ul預設的內縮及樣式 */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.drop-down-menu {
+	    width:100%;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 15px;	
+        z-index: 5;  /*控制選單的顯示層級*/         
+        position: fixed;      
+        top: 0%; 	
+        margin-top: 0;
+		opacity: 0.94;
+        transition: opacity ; 
+        background-color:#666666;
+		
+	
+		
+    }
+
+    ul.drop-down-menu li {
+        position: relative;		
+        top:10%;
+		z-index:1;
+        white-space: nowrap;
+        border-left: #ccc 0px solid;
+		
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+		width:19.9%;
+    }
+
+     ul.drop-down-menu a {
+        background-img:pic/背景.jpg;
+        color: #ffff;
+        display: block;
+        padding: 0 105px;
+        text-decoration: none;
+        line-height: 40px;
+	    text-align:center;
+
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        background-color:#A3D1D1;
+        color: #fff;
+		
+    }
+	ul.drop-down-menu ul { /*隱藏次選單*/
+        display: none;
+		
+    }
+
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        display: block;
+	
+    }
+	
+	.title{
+	position:relative;
+	top:6%;
+	}
+	.pic1{
+	left:19%;
+	 top:47%;
+	position:absolute;
+	z-index:1;
+	border: 10px solid #ffff;
+	}
+	.pic2{
+	left:50%;
+	 top:50%;
+	position:absolute;
+	z-index:-1;
+	}
+	.pic3{
+	left:7%;
+	 top:180%;
+	position:absolute;
+	z-index:-1;
+	}
+	.pic4{
+	left:40%;
+	 top:170%;
+	position:absolute;
+	z-index:1;
+	border: 10px solid #ffff;
+	}
+	
+	.pic5{
+	left:50%;
+	 top:120%;
+	position:absolute;
+	z-index:-1;
+	}
+	.pic6{
+	left:21%;
+	 top:110%;
+	position:absolute;
+	z-index:1;
+	border: 10px solid #ffff;
+	}
+	.pic7{
+	left:62%;
+	 top:200%;
+	position:absolute;
+	z-index:-1;
+	}
+	#myCanvas{
+	position:absolute;
+	top:260%;
+	width:100%;
+	height:310px;
+	opacity: 0.8;
+    transition: opacity ; 
+    background-color:#666666;
+	z-index:-1;
+	}
+	.table{
+	position:absolute;
+	top:263%;
+	width:820;
+	z-index:1;
+	}
+	.map{
+	position:absolute;
+	top:261%;
+	left:68%;
+	z-index:1;
+	}
+	</style>
+	<body >
+		<div class="title">
+		<img src="pic/紅磚圖.jpg" width="100%">
+		<h1 align=center><font  color="#880000"size="9"face="微軟正黑體">鹿東紅磚瓦下ㄟ埤頭故事</font></h1>
+		</div>
+		
+		<ul class="drop-down-menu" >  
+        <li><a href="map.html">關於鹿草</a>
+		 <ul>
+		 <li><a href="map.html#1">介紹鹿草</a>
+		 </li>
+		 <li><a href="map.html#1">介紹「一袋一鹿」</a>
+		 </li>
+		  </ul>
+        </li>
+        <li><a href="map.html#2">關於我們</a>
+        </li>
+        <li><a href="#">景點介紹</a>
+		 <ul>
+                <li><a href="迷鹿餐廳2.html">迷鹿餐廳</a>
+                </li>
+                <li><a href="艾美筑2.html">艾美筑工坊</a>
+                </li>
+                <li><a href="公所2.html">鹿草鄉公所</a>
+                </li>
+                <li><a href="日和2.html">日和製冰部</a>
+                </li>
+                <li><a href="紅磚2.html">鹿東紅磚瓦下ㄟ埤頭故事</a>
+                </li>
+                <li><a href="順發2.html">順發禮餅舖</a>
+                </li>
+                <li><a href="涸魚2.html">鹿東涸魚季</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="一日遊行程.html">一日遊行程</a>
+        </li>
+  
+        <li><a href="mailto:js94028@gmail.com?subject=給我們的建議">聯絡我們</a>
+        </ul>
+		
+		<img class="pic1" src="pic/紅磚1.jpg" width="32%">
+		<img class="pic2" src="pic/紅磚介紹1.jpg" width="35%" height="48%">
+		
+		<img class="pic3" src="pic/紅磚介紹2.jpg" width="37%" height="30%">
+		<img class="pic4" src="pic/紅磚2.jpg" width="25%">
+		<img class="pic7" src="pic/紅磚介紹5.jpg" width="37%" height="30%">
+		
+		<img class="pic5" src="pic/紅磚介紹3.jpg" width="30%" height="30%">
+		<img class="pic6" src="pic/紅磚4.jpg" width="30%">
+		
+		<canvas id="myCanvas"></canvas>
+		
+		 <table class="table">
+                 <tr>
+				 <td>
+				 <h1 align="left"><span style="color:#ffff; font-size: 28px;">鹿東紅磚瓦下ㄟ埤頭故事</span></h1>
+                </td>
+				</tr>
+                 <tr>
+				 <td>
+                 <p><strong><span style="color: #ffff;font-size: 20px;">地址：611嘉義縣鹿草鄉鹿東社區 </span></strong></p>
+			    </td>
+				<td>
+			    </td>
+				 </tr>
+			</table>
+			<br>
+			<p class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.290186274297!2d120.31008471474526!3d23.413882384756306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9aeeda0c430d%3A0x4f5c8f44368e0941!2z6bm_5p2x57SF56Oa55Om5LiL44Sf5Z-k6aCt5pWF5LqL!5e0!3m2!1szh-TW!2stw!4v1578147984151!5m2!1szh-TW!2stw"  width="400" height="270" frameborder="1" style="border:1;" allowfullscreen=""></iframe>
+            </p>
+		</body>
+</html>
+		
